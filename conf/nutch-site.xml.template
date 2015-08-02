@@ -5,4 +5,28 @@
 
 <configuration>
 
+  <!-- configure user agent -->
+  <property>
+    <name>http.agent.name</name>
+    <value>Andrei's Nutch Spider</value>
+  </property>
+
+  <!-- use gora for storage -->
+  <property>
+    <name>storage.data.store.class</name>
+    <value>org.apache.gora.hbase.store.HBaseStore</value>
+    <description>Default class for storing data</description>
+  </property>
+
+  <!-- configure solr for indexing -->
+  <property>
+    <name>plugin.includes</name>
+    <value>protocol-http|urlfilter-regex|parse-(html|tika)|index-(basic|anchor)|indexer-solr|scoring-opic|urlnormalizer-(pass|regex|basic)</value>
+  </property>
+
+  <!-- configure solr url -->
+  <property>
+    <name>solr.server.url</name>
+    <value>http://localhost:8983/solr</value>
+  </property>
 </configuration>
