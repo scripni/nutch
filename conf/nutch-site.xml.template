@@ -29,4 +29,20 @@
     <name>solr.server.url</name>
     <value>http://localhost:8983/solr</value>
   </property>
+
+  <!-- increase throughput as number of hostnames is relatively small -->
+  <property>
+    <name>fetcher.threads.per.queue</name>
+    <value>10</name>
+  <property>
+
+  <property>
+    <name>fetcher.server.delay</name>
+    <value>0.1</value>
+  </property>
+
+  <property>
+    <name>fetcher.server.min.delay</name>
+    <value>0.0</value>
+  </property>
 </configuration>
