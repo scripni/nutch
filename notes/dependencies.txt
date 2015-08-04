@@ -1,0 +1,6 @@
+# hbase
+wget http://archive.apache.org/dist/hbase/hbase-0.94.14/hbase-0.94.14.tar.gz
+
+# solr
+wget http://archive.apache.org/dist/lucene/solr/4.9.1/solr-4.9.1.tgz
+
