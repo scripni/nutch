@@ -33,7 +33,7 @@
   <!-- increase throughput as number of hostnames is relatively small -->
   <property>
     <name>fetcher.threads.per.queue</name>
-    <value>10</name>
+    <value>10</value>
   <property>
 
   <property>
